@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cafe IT — Brewed Fresh, Served with Heart</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">Cafe <span>IT</span></a>
+    <ul class="nav-links">
+      <li><a href="404.html">About</a></li>
+      <li><a href="products.html">Menu</a></li>
+      <li><a href="404.html">Experience</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a href="#menu" class="nav-cta">Order Now</a>
+    <div class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Now Open Daily · 7AM – 10PM</div>
+      <h1 class="hero-title">Brewed Fresh,<br><em>Served with Heart</em></h1>
+      <p class="hero-sub">Your neighborhood coffee spot for slow mornings, deep conversations, and perfectly crafted cups that warm you from the inside out.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn-primary">Explore Our Menu</a>
+        <a href="#about" class="btn-secondary">Our Story →</a>
+      </div>
+    </div>
+    <div class="scroll-hint">Scroll</div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item">Freshly Roasted Beans</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">Handcrafted with Care</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">Single Origin Espresso</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">Slow Pours & Good Vibes</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">Kabankalan City, Philippines</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">Est. 2024</span>
+      <span class="marquee-dot">✦</span>
+      <!-- duplicate for seamless loop -->
+      <span class="marquee-item">Freshly Roasted Beans</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">Handcrafted with Care</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">Single Origin Espresso</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">Slow Pours & Good Vibes</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">Kabankalan City, Philippines</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">Est. 2024</span>
+      <span class="marquee-dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="intro-grid">
+        <div>
+          <p class="intro-label">Our Story</p>
+          <h2 class="intro-heading">More than coffee —<br>it's a <em>ritual</em></h2>
+          <p class="intro-body">At Cafe IT, we believe every cup tells a story. From our carefully sourced single-origin beans to the last sip of a perfectly steamed latte, every detail is crafted with intention. We're not just a café — we're your daily pause in a busy world.</p>
+          <p class="intro-body">Founded with a simple dream: create a space where locals gather, ideas bloom, and coffee always hits just right.</p>
+          <a href="#menu" class="btn-primary">See Our Menu</a>
+          <div class="stats-row">
+            <div class="stat">
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Menu Items</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">1K+</div>
+              <div class="stat-label">Happy Customers</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Fresh Daily</div>
+            </div>
+          </div>
+        </div>
+        <div class="intro-image" style="display:block">
+          <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg" alt="Barista crafting coffee" loading="lazy" />
+          <div class="intro-image-badge">
+            <strong>Since 2024</strong>
+            <span>Proudly local</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <p class="section-label">Our Drinks</p>
+      <h2 class="section-title">Best Sellers</h2>
+      <p class="section-sub">Crafted one cup at a time, using only the finest beans and freshest ingredients.</p>
+
+      <div class="menu-grid">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.pexels.com/photos/5112643/pexels-photo-5112643.jpeg" alt="Cappuccino" loading="lazy"/>
+          </div>
+          <div class="menu-card-info">
+            <span class="menu-card-tag">Hot</span>
+            <div class="menu-card-name">Cappuccino</div>
+            <div class="menu-card-desc">Espresso, steamed milk & thick foam</div>
+            <div class="menu-card-price">₱48</div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.pexels.com/photos/5741238/pexels-photo-5741238.jpeg" alt="Americano" loading="lazy"/>
+          </div>
+          <div class="menu-card-info">
+            <span class="menu-card-tag">Hot / Iced</span>
+            <div class="menu-card-name">Americano</div>
+            <div class="menu-card-desc">Bold espresso with hot water</div>
+            <div class="menu-card-price">₱35</div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.pexels.com/photos/7113834/pexels-photo-7113834.jpeg" alt="Matcha" loading="lazy"/>
+          </div>
+          <div class="menu-card-info">
+            <span class="menu-card-tag">Popular</span>
+            <div class="menu-card-name">Matcha Latte</div>
+            <div class="menu-card-desc">Premium ceremonial grade matcha</div>
+            <div class="menu-card-price">₱89</div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.pexels.com/photos/894696/pexels-photo-894696.jpeg" alt="Latte" loading="lazy"/>
+          </div>
+          <div class="menu-card-info">
+            <span class="menu-card-tag">Hot / Iced</span>
+            <div class="menu-card-name">Latte</div>
+            <div class="menu-card-desc">Silky espresso with steamed milk</div>
+            <div class="menu-card-price">₱35</div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.pexels.com/photos/6638846/pexels-photo-6638846.jpeg" alt="Macchiato" loading="lazy"/>
+          </div>
+          <div class="menu-card-info">
+            <span class="menu-card-tag">Signature</span>
+            <div class="menu-card-name">Macchiato</div>
+            <div class="menu-card-desc">Espresso marked with a dollop of foam</div>
+            <div class="menu-card-price">₱64</div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.pexels.com/photos/1023949/pexels-photo-1023949.jpeg" alt="Mocha" loading="lazy"/>
+          </div>
+          <div class="menu-card-info">
+            <span class="menu-card-tag">Hot</span>
+            <div class="menu-card-name">Mocha</div>
+            <div class="menu-card-desc">Espresso, chocolate & steamed milk</div>
+            <div class="menu-card-price">₱39</div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.pexels.com/photos/3860486/pexels-photo-3860486.jpeg" alt="Irish Coffee" loading="lazy"/>
+          </div>
+          <div class="menu-card-info">
+            <span class="menu-card-tag">Special</span>
+            <div class="menu-card-name">Irish Coffee</div>
+            <div class="menu-card-desc">Coffee, whiskey & whipped cream</div>
+            <div class="menu-card-price">₱50</div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.pexels.com/photos/585754/pexels-photo-585754.jpeg" alt="Black Coffee" loading="lazy"/>
+          </div>
+          <div class="menu-card-info">
+            <span class="menu-card-tag">Classic</span>
+            <div class="menu-card-name">Black Coffee</div>
+            <div class="menu-card-desc">Pure, simple, unapologetic</div>
+            <div class="menu-card-price">₱32</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-cta-wrap">
+        <a href="#" class="btn-light" style="margin-top:1rem; display:inline-block;">View Full Menu →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience-section section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label" style="color:var(--caramel)">Why Cafe IT</p>
+        <h2 class="section-title" style="font-family:'Playfair Display',serif; font-size:clamp(2rem,4vw,2.75rem); color:var(--espresso)">The Cafe IT <em style="color:var(--caramel); font-style:italic">Experience</em></h2>
+      </div>
+      <div class="experience-grid">
+        <div class="exp-card">
+          <span class="exp-icon">☕</span>
+          <h3 class="exp-title">Craft-First Coffee</h3>
+          <p class="exp-desc">Every bean is hand-selected and roasted to bring out its unique character. We don't cut corners — ever.</p>
+        </div>
+        <div class="exp-card">
+          <span class="exp-icon">🌿</span>
+          <h3 class="exp-title">Fresh Ingredients</h3>
+          <p class="exp-desc">From locally sourced milk to premium syrups, freshness drives every recipe on our menu.</p>
+        </div>
+        <div class="exp-card">
+          <span class="exp-icon">🏡</span>
+          <h3 class="exp-title">A Space to Belong</h3>
+          <p class="exp-desc">Cozy corners, good lighting, free Wi-Fi, and a team that remembers your name. Come in a stranger, leave a regular.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">What People Say</p>
+        <h2 class="section-title">Loved by the Community</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">This is my second home. The matcha latte here is unbelievably good — nothing compares in the whole city.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">A</div>
+            <div>
+              <div class="testimonial-name">Ana Reyes</div>
+              <div class="testimonial-role">Regular, since opening day</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">Incredible atmosphere and even better coffee. I do all my freelance work from here — the vibe is just right.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">M</div>
+            <div>
+              <div class="testimonial-name">Marco Dela Cruz</div>
+              <div class="testimonial-role">Freelancer & Coffee Enthusiast</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">The cappuccino is always perfect. Staff are warm and welcoming. Cafe IT is exactly what our neighborhood needed.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">L</div>
+            <div>
+              <div class="testimonial-name">Lena Santos</div>
+              <div class="testimonial-role">Local resident</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner" id="visit">
+    <h2 class="cta-banner-title">Ready for a <em>great cup?</em></h2>
+    <p class="cta-banner-sub">Walk in, sit down, and let us take care of the rest. No rush — just coffee.</p>
+    <a href="#menu" class="btn-light">Order Now →</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand-name">Cafe <span>IT</span></div>
+        <p class="footer-tagline">Brewed fresh daily. Your cozy neighborhood café for great coffee, good vibes, and even better company.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.63 9.87v-6.99h-2.8V12h2.8V9.8c0-2.77 1.65-4.3 4.17-4.3 1.21 0 2.47.22 2.47.22v2.72h-1.39c-1.37 0-1.8.85-1.8 1.72V12h3.06l-.49 2.88h-2.57v6.99A10 10 0 0 0 22 12z"/></svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5c3.18 0 5.75-2.57 5.75-5.75v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5C18.32 4 20 5.68 20 7.75v8.5c0 2.07-1.68 3.75-3.75 3.75h-8.5C5.68 20 4 18.32 4 16.25v-8.5C4 5.68 5.68 4 7.75 4zm8.75 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM12 7a5 5 0 1 0 0 10A5 5 0 0 0 12 7zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/></svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="Twitter">
+            <svg viewBox="0 0 24 24"><path d="M22 5.92c-.77.35-1.6.58-2.46.69a4.26 4.26 0 0 0 1.88-2.35 8.5 8.5 0 0 1-2.7 1.03A4.24 4.24 0 0 0 11.5 8.03a12.03 12.03 0 0 1-8.74-4.43 4.24 4.24 0 0 0 1.31 5.66A4.2 4.2 0 0 1 2.8 8.6v.05a4.24 4.24 0 0 0 3.4 4.16 4.3 4.3 0 0 1-1.91.07 4.25 4.25 0 0 0 3.97 2.95A8.52 8.52 0 0 1 2 18.58a12.02 12.02 0 0 0 6.52 1.91c7.83 0 12.11-6.49 12.11-12.11 0-.18 0-.35-.01-.52A8.64 8.64 0 0 0 22 5.92z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#visit">Visit Us</a></li>
+          <li><a href="#">Order Online</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <ul class="footer-hours">
+          <li><span>Mon – Fri</span>7:00 AM – 10:00 PM</li>
+          <li><span>Saturday</span>8:00 AM – 11:00 PM</li>
+          <li><span>Sunday</span>8:00 AM – 9:00 PM</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>cafeit@email.com</li>
+          <li>+63 912 345 6789</li>
+          <li>Kabankalan City,</li>
+          <li>Philippines</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Cafe IT. All rights reserved.</p>
+      <p>Made with ♥ in Kabankalan City</p>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll nav
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Mobile menu (simple toggle)
+    function toggleMenu() {
+      const links = document.querySelector('.nav-links');
+      const cta = document.querySelector('.nav-cta');
+      const isOpen = links.style.display === 'flex';
+      if (isOpen) {
+        links.style.display = '';
+        cta.style.display = '';
+      } else {
+        links.style.cssText = 'display:flex; flex-direction:column; position:absolute; top:70px; left:0; right:0; background:var(--white); padding:1.5rem 2rem; box-shadow:0 8px 30px rgba(0,0,0,0.1); z-index:99;';
+        cta.style.cssText = 'display:block; position:absolute; top:200px; left:2rem; z-index:99;';
+      }
+    }
+
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.exp-card, .testimonial, .menu-card, .stat').forEach(el => {
+      el.style.cssText += 'opacity:0; transform:translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease;';
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html
